@@ -7,4 +7,14 @@
 image:
   file: Dockerfile
 
+tasks:
+    - name: Launch
+      command: docker-compose up
+
+ports:
+    - name: Webhook
+      description: Manage Webhooks
+      port: 8084
+      onOpen: open-browser
+
 
