@@ -8,8 +8,9 @@ image:
   file: Dockerfile
 
 tasks:
-    - name: Launch
-      command: docker-compose up
+  - name: Docker
+    init: >
+      docker-compose up
 
 ports:
     - name: Webhook
